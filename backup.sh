@@ -1,0 +1,2 @@
+#!/bin/bash
+rsync -HaAXvxS --exclude='/dev/*' --exclude='/proc/*' --exclude='/sys/*' --exclude='/tmp/*' --exclude='/run/*' --exclude='/mnt/*' --exclude='/media/*' --exclude='/lost+found' --exclude='/home/bread/.cache/*' --exclude='/home/bread/.local/share/Trash/*' --exclude='/home/bread/.gvfs' --exclude='/var/lib/dhcpcd/*' --exclude='home/bread/.cargo' / /mnt/backup/slice-backup --numeric-ids --delete
